@@ -67,7 +67,10 @@
 		if(TO_JSON)
 		{
 			$outtext = explode("\n", $outtext);
-			$outtext = json_encode($outtext);
+			if(PRETTY_PRINT)
+				$outtext = json_encode($outtext,JSON_PRETTY_PRINT);
+			else
+				$outtext = json_encode($outtext);
 		}
 		fwrite($file, $outtext);
 		fclose($file);

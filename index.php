@@ -3,6 +3,7 @@
 	define('PASSWORD_MAX_LEN',3); // The maximum length of the combination to be tried
 	define("TRY_ALL", true);  // To try all lengths from 1 to PASSWORD_MAX_LEN or not
 	define("TO_JSON",true);
+	define("PRETTY_PRINT",false); // pretty print creates a json file, easily readable to us, but increases size usage. 
 
 	// remove according to usage.
 	$token = array('a','A','1'); // What to be included in the combinations : 
